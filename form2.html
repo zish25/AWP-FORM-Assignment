@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .form-container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: #f0f4f6;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="date"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            background-color: #c0c0c0;
+            border-radius: 4px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #a9a9a9;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #808080;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>HTML Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name :</td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name :</td>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth :</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Email id :</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number :</td>
+                    <td><input type="number" name="mobile"></td>
+                </tr>
+            </table>
+            <div class="btn-container">
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
